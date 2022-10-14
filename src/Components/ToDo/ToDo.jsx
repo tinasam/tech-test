@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react';
+import "./ToDo.scss";
+
 
 const ToDo = () => {
+    
   return (
-    <div></div>
+    <div className='todoEntry_box'>Enter todo here </div>
   )
 }
 
