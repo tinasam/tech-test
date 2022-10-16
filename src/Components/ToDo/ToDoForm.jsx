@@ -10,19 +10,19 @@ const ToDoForm = (props) => {
     const handletodoSubmit = t => {
         t.preventDefault();
 
-        // props.onSubmit({
-        //     id: Math.floor(Math.random() * 5000),
-        //     text: todoInput,
-        // });
+        props.onSubmit({
+            id: Math.floor(Math.random() * 15000),
+            text: todoInput,
+        });
         settodoInput('');
     };
-    
+
     return (
         <form className='todo-form' onSubmit={handletodoSubmit}>
         <input 
-        type="text" 
+        type='text' 
         placeholder="Add your task here..." 
-        value={settodoInput}
+        value={todoInput}
         name="text" 
         className="todoInput" 
         onChange={handletodoInputChange}
