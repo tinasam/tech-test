@@ -1,16 +1,19 @@
 import React from 'react'
 // import './App.scss'
-import ToDo from "./Components/ToDo/ToDo.jsx"
+import ToDoForm from './Components/ToDo/ToDoForm.jsx'
 
 
 const App = () => {
   return (
-    <div>
-      <h2>My ToDos</h2>
-      <button className='buttonToDo'>Reset</button>
-      <button className='addToDos'>+</button>
-
-    </div>
+    <>
+        <div className="to-doList">
+          <section className="toDos">
+            <h2 className='toDo_Title'>My ToDos</h2>
+            <ToDoForm />
+            <h5>Nothing to see here yet...Add a task in the field above!</h5>
+          </section>
+        </div>
+    </>
   )
 }
 
